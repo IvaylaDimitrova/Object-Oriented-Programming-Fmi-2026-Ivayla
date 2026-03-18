@@ -18,7 +18,11 @@
 **Магическа карта / Magic card**
 - Име (низ с дължина до 25 символа).
 - Ефект (низ с дължина до 100 символа).
-- Тип (може да е един следните 3: "trap", "equip", "spell")
+- Тип (може да е един следните 3: "spell", "equip", "trap")
+
+И двата класа трябва да имат 2 функции, като:
+- първата да описва типа карта (напр. "Monster cards have a name, attack points and defense points." и "Magic cards have a name, effect and a type - spell, equip or trap.")
+- втората да дава информация за конкретна карта (напр. "`Blue-eyes white dragon` is a monster with ATK: 3000 and DEF: 2500." и "`Pot of greed` is a spell with the following effect - "Draw 2 cards.".")
 
 Реализирайте клас **Deck**.Тестето трябва да има:
 - Масив от карти чудовища (максимално – 20 карти).
@@ -47,7 +51,7 @@ Deck d;
 d.changeMonsterCard(4, "Yubel", 0, 0);
 
 // 5-th card in the Magic deck is added/changed to "Pot of greed"
-d.changeMagicCard(5, "Pot of greed", "Draw 2 cards", spell);
+d.changeMagicCard(5, "Pot of greed", "Draw 2 cards.", spell);
 
 //Returns the amount of MagicCards in the deck
 d.getMagicCardCount(); //1
