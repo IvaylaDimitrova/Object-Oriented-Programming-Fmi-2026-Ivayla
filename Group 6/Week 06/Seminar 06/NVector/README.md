@@ -82,6 +82,7 @@
 <details>
 
 <summary> Hint </summary>
+
 - **`void resize(int newSize)`**
   Преоразмерява вектора. Запазва текущите елементи и добавя `0` за новите позиции.
 
